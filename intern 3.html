@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akshita Flexbox Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>Akshita</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Folders</a></li>
+        </ul>
+    </nav>
+
+    <!-- CARDS -->
+    <section class="container">
+        <div class="card">
+            <h3>Folder 1</h3>
+            <p>Click below to open next screen</p>
+            <a href="about.html" class="btn">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Folder 2</h3>
+            <p>This also opens new page</p>
+            <a href="about.html" class="btn">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Folder 3</h3>
+            <p>Responsive using Flexbox</p>
+            <a href="about.html" class="btn">Open</a>
+        </div>
+    </section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Folder Opened</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Akshita</h2>
+        <ul>
+            <li><a href="index.html">Back</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="card">
+            <h3>Folder Content</h3>
+            <p>
+                Ye next screen hai.<br>
+                Link click karne pe ye page open hua.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4a2fe0;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 8
